@@ -64,10 +64,7 @@ public class IndexDocs {
         Analyzer defaultAnalyzer = new StandardAnalyzer();
 
         Map<String, Analyzer> perFieldAnalyzers = new HashMap<>();
-        perFieldAnalyzers.put(TITLE, new WhitespaceAnalyzer());
-        perFieldAnalyzers.put(TITLE, new StandardAnalyzer());
         perFieldAnalyzers.put(TITLE, new EnglishAnalyzer());
-        perFieldAnalyzers.put(CONTENT, new StandardAnalyzer());
         perFieldAnalyzers.put(CONTENT, new EnglishAnalyzer());
 
         return  new PerFieldAnalyzerWrapper(defaultAnalyzer, perFieldAnalyzers);
