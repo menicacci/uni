@@ -1,0 +1,2 @@
+Implemented during the Academic Year of 2020/2021
+These are my first implementations of data structures with the C language
